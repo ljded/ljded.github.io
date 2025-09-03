@@ -56,9 +56,6 @@ enum I18nKey {
 	animeStatusPlanned = "animeStatusPlanned",
 	animeYear = "animeYear",
 	animeStudio = "animeStudio",
-	animeEmpty = "animeEmpty",
-	animeEmptyBangumi = "animeEmptyBangumi",
-	animeEmptyLocal = "animeEmptyLocal",
 
 	// 短文页面
 	diarySubtitle = "diarySubtitle",
@@ -158,24 +155,6 @@ enum I18nKey {
 	rssCopied = "rssCopied",
 	rssCopyFailed = "rssCopyFailed",
 
-	// Atom页面
-	atom = "atom",
-	atomDescription = "atomDescription",
-	atomSubtitle = "atomSubtitle",
-	atomLink = "atomLink",
-	atomCopyToReader = "atomCopyToReader",
-	atomCopyLink = "atomCopyLink",
-	atomLatestPosts = "atomLatestPosts",
-	atomWhatIsAtom = "atomWhatIsAtom",
-	atomWhatIsAtomDescription = "atomWhatIsAtomDescription",
-	atomBenefit1 = "atomBenefit1",
-	atomBenefit2 = "atomBenefit2",
-	atomBenefit3 = "atomBenefit3",
-	atomBenefit4 = "atomBenefit4",
-	atomHowToUse = "atomHowToUse",
-	atomCopied = "atomCopied",
-	atomCopyFailed = "atomCopyFailed",
-
 	// 时间线页面
 	timeline = "timeline",
 	timelineSubtitle = "timelineSubtitle",
@@ -202,35 +181,6 @@ enum I18nKey {
 	timelineCurrentRole = "timelineCurrentRole",
 	timelineEmployed = "timelineEmployed",
 	timelineAvailable = "timelineAvailable",
-
-	// 密码保护
-	passwordProtected = "passwordProtected",
-	passwordProtectedTitle = "passwordProtectedTitle",
-	passwordProtectedDescription = "passwordProtectedDescription",
-	passwordPlaceholder = "passwordPlaceholder",
-	passwordUnlock = "passwordUnlock",
-	passwordUnlocking = "passwordUnlocking",
-	passwordIncorrect = "passwordIncorrect",
-	passwordDecryptError = "passwordDecryptError",
-	passwordRequired = "passwordRequired",
-	passwordVerifying = "passwordVerifying",
-	passwordDecryptFailed = "passwordDecryptFailed",
-	passwordDecryptRetry = "passwordDecryptRetry",
-	passwordUnlockButton = "passwordUnlockButton",
-	copyFailed = "copyFailed",
-	syntaxHighlightFailed = "syntaxHighlightFailed",
-	autoSyntaxHighlightFailed = "autoSyntaxHighlightFailed",
-	decryptionError = "decryptionError",
-
-	//最后编辑时间卡片
-	lastModifiedPrefix = "lastModifiedPrefix",
-	lastModifiedOutdated = "lastModifiedOutdated",
-	year = "year",
-	month = "month",
-	day = "day",
-	hour = "hour",
-	minute = "minute",
-	second = "second",
 }
 
 export default I18nKey;

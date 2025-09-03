@@ -5,20 +5,8 @@
 ![TypeScript](https://img.shields.io/badge/TypeScript-5.9.2-blue)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
-![Mizuki Preview](../README.png)
-
-<table>
-  <tr>
-    <td><img alt="" src="image/1.png"></td>
-    <td><img alt="" src="image/2.png"></td>
-    <td><img alt="" src="image/3.png"></td>
-  <tr>
-  <tr>
-    <td><img alt="" src="image/4.png"></td>
-    <td><img alt="" src="image/5.png"></td>
-    <td><img alt="" src="image/6.png"></td>
-  <tr>
-</table>
+![Mizuki 預覽](../README.webp)
+![Mizuki 預覽](../README2.webp)
 
 一個現代化、功能豐富的靜態部落格模板，基於 [Astro](https://astro.build) 構建，具有先進的功能和精美的設計。
 
@@ -26,15 +14,10 @@
 [**📝 使用者文檔**](https://docs.mizuki.mysqil.com/)
 
 🌏 README 語言
-[**English**](../README.md) /
-[**中文**](../README.zh.md) /
+[**中文**](../README.md) /
+[**English**](../README.en.md) /
 [**日本語**](./README.ja.md) /
-[**中文繁体**](./README.tw.md) /
-
-## 🆕 v5.0 版本更新
-- **Pio 看板娘整合**：整合了 Pio 看板娘，提供可愛的互動角色，增強使用者互動體驗。
-- **高度可配置**：支援在 `src/config.ts` 中進行詳細配置，包括模型路徑、位置、尺寸、對話內容等，滿足個性化需求。
-- **無刷新跳轉**：看板娘的返回首頁功能現在使用主題自帶的 Swup 無刷新跳轉，提供更流暢、無縫的頁面切換體驗。
+[**中文繁體**](./README.tw.md) /
 
 ## 🆕 v4.3 版本更新
 - **番劇頁面：** 重構了更可愛好看的番劇頁面，包括番劇列表、番劇詳情和番劇時間軸。
@@ -94,7 +77,11 @@
 - [x] 閱讀時間估算
 - [x] 文章分類和標籤系統
 
-
+### 🌐 國際化支援
+- [x] **多語言支援**，即時翻譯功能
+- [x] **自動語言檢測**，基於使用者偏好
+- [x] **客戶端翻譯**，由 Edge Translate 驅動
+- [x] 支援 10+ 種語言（中文、英文、日文、韓文、西班牙文等）
 
 ### 📱 特色頁面
 - [x] **追番頁面** - 追蹤動畫觀看進度和評分
@@ -252,6 +239,11 @@ export const siteConfig: SiteConfig = {
     hue: 210, // 0-360，主題色調
     fixed: false, // 隱藏主題色選擇器
   },
+  translate: {
+    enable: true, // 啟用翻譯功能
+    service: "client.edge", // 翻譯服務
+    defaultLanguage: "chinese_traditional",
+  },
   banner: {
     enable: true,
     src: ["assets/banner/1.webp"], // 橫幅圖片
@@ -289,11 +281,13 @@ export const siteConfig: SiteConfig = {
 - 基於原始 [Fuwari](https://github.com/saicaca/fuwari) 模板
 - 使用 [Astro](https://astro.build) 和 [Tailwind CSS](https://tailwindcss.com) 構建
 - 靈感來源於 [Yukina](https://github.com/WhitePaper233/yukina) - 一個美麗優雅的部落格模板
+- 翻譯功能由 [translate](https://gitee.com/mail_osc/translate) 提供支援 - AI i18n 自動HTML翻譯解決方案
 - 圖標來自 [Iconify](https://iconify.design/)
 
 ### 特別感謝
 
 - **[Yukina](https://github.com/WhitePaper233/yukina)** - 感謝提供設計靈感和創意，幫助塑造了這個專案。Yukina 是一個優雅的部落格模板，展現了出色的設計原則和使用者體驗。
+- **[translate](https://gitee.com/mail_osc/translate)** - 感謝提供創新的AI驅動i18n解決方案，僅需兩行JavaScript程式碼即可實現HTML自動翻譯。這個開源工具讓多語言支援變得極其簡單高效。
 
 ---
 

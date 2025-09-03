@@ -1,4 +1,5 @@
 import {
+	AUTO_MODE,
 	DARK_MODE,
 	DEFAULT_THEME,
 	LIGHT_MODE,
@@ -28,11 +29,11 @@ export function setHue(hue: number): void {
 
 export function applyThemeToDocument(theme: LIGHT_DARK_MODE) {
 	// 获取当前主题状态的完整信息
-	const currentIsDark = document.documentElement.classList.contains("dark");
-	const currentTheme = document.documentElement.getAttribute("data-theme");
-
+	const currentIsDark = document.documentElement.classList.contains('dark');
+	const currentTheme = document.documentElement.getAttribute('data-theme');
+	
 	// 计算目标主题状态
-	let targetIsDark: boolean = false; // 初始化默认值
+	let targetIsDark: boolean;
 	switch (theme) {
 		case LIGHT_MODE:
 			targetIsDark = false;
@@ -40,30 +41,28 @@ export function applyThemeToDocument(theme: LIGHT_DARK_MODE) {
 		case DARK_MODE:
 			targetIsDark = true;
 			break;
-		default:
-			// 处理默认情况，使用当前主题状态
-			targetIsDark = currentIsDark;
+		case AUTO_MODE:
+			targetIsDark = window.matchMedia("(prefers-color-scheme: dark)").matches;
 			break;
 	}
-
+	
 	// 检测是否真的需要主题切换：
 	// 1. dark类状态是否改变
 	// 2. expressiveCode主题是否需要更新
 	const needsThemeChange = currentIsDark !== targetIsDark;
-	const expectedTheme = targetIsDark ? "github-dark" : "github-light";
-	const needsCodeThemeUpdate = currentTheme !== expectedTheme;
-
+	const needsCodeThemeUpdate = currentTheme !== expressiveCodeConfig.theme;
+	
 	// 如果既不需要主题切换也不需要代码主题更新，直接返回
 	if (!needsThemeChange && !needsCodeThemeUpdate) {
 		return;
 	}
-
+	
 	// 只在需要主题切换时添加过渡保护
 	if (needsThemeChange) {
-		document.documentElement.classList.add("is-theme-transitioning");
+		document.documentElement.classList.add('is-theme-transitioning');
 	}
-
-	// 使用 requestAnimationFrame 确保在下一帧执行，避免闪屏
+	
+	// 使用 requestAnimationFrame 确保 DOM 更新的时序
 	requestAnimationFrame(() => {
 		// 应用主题变化
 		if (needsThemeChange) {
@@ -74,26 +73,17 @@ export function applyThemeToDocument(theme: LIGHT_DARK_MODE) {
 			}
 		}
 
-		// Set the theme for Expressive Code based on current mode
-		const expressiveTheme = targetIsDark ? "github-dark" : "github-light";
+		// Set the theme for Expressive Code (always update this)
 		document.documentElement.setAttribute(
 			"data-theme",
-			expressiveTheme,
+			expressiveCodeConfig.theme,
 		);
-
-		// 强制重新渲染代码块 - 解决从首页进入文章页面时的渲染问题
-		if (needsCodeThemeUpdate) {
-			// 触发 expressice code 重新渲染
-			setTimeout(() => {
-				window.dispatchEvent(new CustomEvent('theme-change'));
-			}, 0);
-		}
-
-		// 在下一帧快速移除保护类，使用微任务确保DOM更新完成
+		
+		// 在同一帧内快速移除保护类，使用微任务确保DOM更新完成
 		if (needsThemeChange) {
-			// 使用 requestAnimationFrame 确保在下一帧移除过渡保护类
-			requestAnimationFrame(() => {
-				document.documentElement.classList.remove("is-theme-transitioning");
+			// 使用微任务在同一帧内处理，避免额外的帧延迟
+			Promise.resolve().then(() => {
+				document.documentElement.classList.remove('is-theme-transitioning');
 			});
 		}
 	});
