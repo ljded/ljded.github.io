@@ -173,6 +173,7 @@ export type BlogPostData = {
 	draft?: boolean;
 	image?: string;
 	category?: string;
+	series?: string;
 	pinned?: boolean;
 	prevTitle?: string;
 	prevSlug?: string;
