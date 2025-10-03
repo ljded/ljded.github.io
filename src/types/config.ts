@@ -46,7 +46,7 @@ export type SiteConfig = {
 	bangumi?: {
 		userId?: string; // Bangumi用户ID
 	};
-	
+
 	// 添加番剧页面配置
 	anime?: {
 		mode?: "bangumi" | "local"; // 番剧页面模式
@@ -139,7 +139,6 @@ export type ProfileConfig = {
 		url: string;
 		icon: string;
 	}[];
-
 };
 
 export type LicenseConfig = {
