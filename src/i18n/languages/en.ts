@@ -219,10 +219,10 @@ export const en: Translation = {
 	// Last Modified Time Card
 	[Key.lastModifiedPrefix]: "Time since last edit: ",
 	[Key.lastModifiedOutdated]: "Some information may be outdated",
-	[Key.year]: "Y ",
-	[Key.month]: "M ",
-	[Key.day]: "D ",
-	[Key.hour]: "H ",
-	[Key.minute]: "Min ",
-	[Key.second]: "Sec",
+	[Key.year]: "y",
+	[Key.month]: "m",
+	[Key.day]: "d",
+	[Key.hour]: "h",
+	[Key.minute]: "min",
+	[Key.second]: "s",
 };
