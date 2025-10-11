@@ -140,7 +140,6 @@ export async function GET(context: APIContext) {
 	return new Response(atomFeed, {
 		headers: {
 			"Content-Type": "application/atom+xml; charset=utf-8",
-			
 		},
 	});
 }
