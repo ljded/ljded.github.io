@@ -31,6 +31,7 @@ export const timelineData: TimelineItem[] = [
 			"校园报修微信小程序后端",
 		type: "project",
 		startDate: "2025-06-06",
+		endDate: "2025-09-28",
 		location: "济南",
 		skills: ["Java", "SpringBoot", "Mybatis-Plus", "Sa-Token", "MySQL", "Redis"],
 		// achievements: [

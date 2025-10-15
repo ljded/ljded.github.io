@@ -23,11 +23,11 @@ export const skillsData: Skill[] = [
 		id: "Java",
 		name: "Java",
 		description:
-			"Java开发",
+			"面向对象的语言",
 		icon: "logos:java",
 		category: "backend",
 		level: "intermediate",
-		experience: { years: 0, months: 11 },
+		experience: { years: 0, months: 10 },
 		projects: ["WeChat-CampusRepairReport"],
 		color: "#F7DF1E",
 	},
@@ -48,12 +48,46 @@ export const skillsData: Skill[] = [
 		name: "Redis",
 		description:
 			"数据库",
-		icon: "logos:redis2",
+		icon: "logos:redis",
 		category: "database",
 		level: "intermediate",
 		experience: { years: 0, months: 6 },
 		projects: ["WeChat-CampusRepairReport"],
 		color: "#f71e1e",
+	},
+	{
+		id: "idea",
+		name: "IntelliJ IDEA",
+		description:
+			"Java/Kotlin IDE",
+		icon: "logos:intellij-idea",
+		category: "tools",
+		level: "intermediate",
+		experience: { years: 0, months: 10 },
+		color: "#000000",
+	},
+	{
+		id: "c",
+		name: "C",
+		description:
+			"入门语言",
+		icon: "logos:c",
+		category: "backend",
+		level: "intermediate",
+		experience: { years: 2, months: 0 },
+		color: "#A8B9CC",
+	},
+	{
+		id: "spring",
+		name: "Spring Boot",
+		description:
+			"后端服务脚手架",
+		icon: "logos:spring-icon",
+		category: "backend",
+		level: "intermediate",
+		experience: { years: 0, months: 5 },
+		projects: ["WeChat-CampusRepairReport"],
+		color: "#6DB33F",
 	},
 ];
 
