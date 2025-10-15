@@ -1,50 +1,62 @@
-# About This Site
+# 关于我们
 
-This website is built with the **Astro** framework using the [Mizuki](https://github.com/matsuzaka-yuki/mizuki) theme.
+本网站使用 **Astro** 框架 [Mizuki](https://github.com/matsuzaka-yuki/mizuki) 模板构建.
 
 ::github{repo="matsuzaka-yuki/Mizuki"}
 
-## 🌟 Theme Features
+## 🎯 我们的使命
 
-### 🎨 Design & User Experience
-- **Modern & Elegant Design** - Clean, minimalist interface with beautiful typography
-- **Fully Responsive** - Optimized for all devices from mobile to desktop
-- **Dark/Light Mode** - Automatic theme switching with smooth transitions
-- **Beautiful Typography** - Enhanced readability with JetBrains Mono font
-- **Smooth Animations** - Fluid page transitions and interactive elements
+我们致力于打造一个开放、友好的技术分享平台，让每一位技术爱好者都能在这里找到灵感和知识。通过现代化的技术栈和优雅的设计，我们希望能够为技术社区贡献一份力量。
 
-### 🔍 Content & Search
-- **Advanced Search** - Powered by [Pagefind](https://pagefind.app/) for fast, accurate results
-- **Enhanced Markdown** - Extended syntax with code highlighting and math support
-- **Interactive Table of Contents** - Auto-scroll navigation for long articles
-- **RSS Feed Generation** - Stay updated with automatic feed generation
-- **Reading Time Estimation** - Know how long articles take to read
-- **Post Categorization** - Organize content with tags and categories
+## 🌟 网站特色
+
+### 现代化技术架构
+- **Astro 框架**：采用最新的岛屿架构，实现极致的加载性能
+- **Material Design 3**：遵循谷歌设计规范，提供一致的视觉体验
+- **响应式设计**：完美适配各种设备，从手机到桌面端都有出色表现
+
+### 丰富的功能特性
+- 🔍 **智能搜索**：基于 Pagefind 的全文搜索，快速定位所需内容
+- 🌙 **深色模式**：自动跟随系统主题，保护您的眼睛
+- 📱 **PWA 支持**：提供类似原生应用的体验
+- 📊 **Mermaid 图表**：支持流程图、时序图等技术图表
+- 📐 **LaTeX 公式**：完美渲染数学公式和科学计算
+
+## 🛠️ 技术栈详解
+
+| 技术领域      | 使用技术                                       |
+|-----------|--------------------------------------------|
+| **前端框架**  | Astro + TypeScript                         |
+| **样式方案**  | Tailwind CSS + 自定义设计令牌                     |
+| **UI 组件** | 基于 Material Design 3 规范                    |
+| **内容管理**  | Markdown + MDX                             |
+| **构建工具**  | Vite + pnpm                                |
+| **部署平台**  | GitHub Pages / EdgeOne Pages(规划中,等待ICP备案)  |
+| **CDN**   | EdgeOne(规划中,等待ICP备案)                       |
+
+
+## 🚀 性能优化
+
+我们始终将用户体验放在首位，通过以下技术手段确保网站的最佳性能：
+
+- **静态生成**：所有页面预渲染，实现瞬时加载
+- **资源优化**：图片懒加载、代码分割、资源压缩
+- **缓存策略**：智能缓存机制，减少重复请求
+- **CDN 加速**：全球边缘节点部署，确保快速访问(规划中,等待ICP备案)
 
 
 
-### 📱 Special Pages
-- **Anime Tracking Page** - Track your anime watching progress with ratings
-- **Friends Links Page** - Showcase friend websites with beautiful cards
-- **Diary/Moments Page** - Share life moments like social media posts
-- **Archive Page** - Organized timeline view of all posts
-- **About Page** - Customizable personal introduction (this page!)
+## 🙏 致谢
 
-### 🛠 Technical Features
-- **Enhanced Code Blocks** - Powered by [Expressive Code](https://expressive-code.com/)
-- **Math Support** - LaTeX rendering with KaTeX for mathematical expressions
-- **Image Optimization** - PhotoSwipe gallery with lazy loading
-- **SEO Optimized** - Built-in sitemap and meta tags for better search visibility
-- **Performance Optimized** - Fast loading with caching and optimization
-- **Comment System Ready** - Integration support for Twikoo comments
+特别感谢以下项目和社区的支持：
 
-### 🎯 Advanced Markdown Features
-- **Callouts & Admonitions** - Beautiful info boxes with `> [!NOTE]`, `> [!TIP]`, `> [!WARNING]`
-- **Mathematical Equations** - Write LaTeX math with `$inline$` and `$$block$$` syntax
-- **GitHub Cards** - Embed repository cards with `::github{repo="user/repo"}`
-- **Syntax Highlighting** - Advanced code highlighting with line numbers
-- **Copy Code Buttons** - Easy code copying functionality
+- **Astro 团队**：提供了优秀的静态站点框架
+- **Tailwind CSS**：强大的工具类优先 CSS 框架
+- **Material Design**：谷歌的设计系统和规范
+- **Mizuki**: 美观的主题
+- **开源社区**：所有贡献者和使用者的支持
 
 ---
 
-*Built with ❤️ using Astro and inspired by modern web design principles.*
+*最后更新：2025/10/15*  
+*让我们一起打造更好的技术分享平台！*
