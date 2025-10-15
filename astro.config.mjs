@@ -27,9 +27,9 @@ import { remarkMermaid } from "./src/plugins/remark-mermaid.js";
 import { remarkReadingTime } from "./src/plugins/remark-reading-time.mjs";
 // https://astro.build/config
 export default defineConfig({
-	site: "https://ljded.cn/",
+	site: "https://longjiandedao.cn/",
 
-	base: "/",
+	// base: "/",
 	trailingSlash: "always",
 	integrations: [
 		tailwind({
