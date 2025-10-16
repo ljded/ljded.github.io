@@ -54,6 +54,7 @@
 - **Tailwind CSS**：强大的工具类优先 CSS 框架
 - **Material Design**：谷歌的设计系统和规范
 - **Mizuki**: 美观的主题
+- **华为**: 本站使用了免费商用的 **HarmonyOS Sans** 字体
 - **开源社区**：所有贡献者和使用者的支持
 
 ---

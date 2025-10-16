@@ -28,6 +28,30 @@
 	font-display: swap;
 }
 
+/* 导入 HarmonyOS_Sans 字体 */
+@font-face {
+	font-family: 'HarmonyOS_Sans';
+	src: url('/assets/font/HarmonyOS_Sans_Medium.ttf') format('truetype');
+	font-weight: 500;
+	font-display: swap;
+}
+
+/* 导入 HarmonyOS_Sans_SC 字体 */
+@font-face {
+	font-family: 'HarmonyOS_Sans_SC';
+	src: url('/assets/font/HarmonyOS_Sans_SC_Medium.ttf') format('truetype');
+	font-weight: 500;
+	font-display: swap;
+}
+
+/* 导入 HarmonyOS_Sans_Arabic 字体 */
+@font-face {
+	font-family: 'HarmonyOS_Sans_Arabic';
+	src: url('/assets/font/HarmonyOS_Sans_Naskh_Arabic_Medium.ttf') format('truetype');
+	font-weight: 500;
+	font-display: swap;
+}
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -65,27 +89,27 @@ html {
         /* 使用混合模式使颜色过渡更平滑 */
         mix-blend-mode: normal;
     }
-    
+
     /* 视图过渡组 - 使用交叉淡化效果 */
     ::view-transition-group(root) {
         animation-duration: 0.5s;
         animation-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
     }
-    
+
     /* 淡出旧视图 - 使用更平滑的曲线 */
     ::view-transition-old(root) {
         animation-name: theme-fade-out;
         /* 确保背景色同步切换 */
         z-index: 2;
     }
-    
+
     /* 淡入新视图 - 使用更平滑的曲线 */
     ::view-transition-new(root) {
         animation-name: theme-fade-in;
         /* 确保新视图在上层 */
         z-index: 1;
     }
-    
+
     /* 定义淡出动画 - 使用更平滑的缓动函数 */
     @keyframes theme-fade-out {
         0% {
@@ -95,7 +119,7 @@ html {
             opacity: 0;
         }
     }
-    
+
     /* 定义淡入动画 - 从下层淡入 */
     @keyframes theme-fade-in {
         0% {
@@ -105,7 +129,7 @@ html {
             opacity: 1;
         }
     }
-    
+
     /* 确保边框和分隔线元素在主题切换时有更明确的过渡时长 */
     .transition,
     [class*="border"],
@@ -114,7 +138,7 @@ html {
         transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
         transition-duration: 0.15s;
     }
-    
+
     /* 主题过渡保护类 - 仅在非 View Transitions 模式下使用 */
     /* 当使用 View Transitions API 时，浏览器会自动处理过渡，不需要禁用 transition */
     .is-theme-transitioning:not(.use-view-transition) *,
@@ -123,7 +147,7 @@ html {
         transition: none !important;
         animation: none !important;
     }
-    
+
     /* 在主题切换时禁用代码块的复杂效果以提升性能 */
     /* 使用 View Transitions 时也需要禁用代码块动画，因为它们太多了 */
     .is-theme-transitioning .expressive-code,
@@ -132,7 +156,7 @@ html {
         animation: none !important;
         will-change: auto !important;
     }
-    
+
     /* 主题切换时临时隐藏代码块以提升性能 */
     /* 这个行为可以通过配置文件中的 expressiveCodeConfig.hideDuringThemeTransition 控制 */
     .is-theme-transitioning .expressive-code {
@@ -140,13 +164,13 @@ html {
         /* 避免闪烁 */
         opacity: 0.99;
     }
-    
+
     /* 当禁用隐藏代码块功能时（通过JavaScript动态控制） */
     .is-theme-transitioning .expressive-code:not(.hide-during-transition) {
         /* 保持代码块可见，但禁用过渡效果 */
         content-visibility: visible !important;
         opacity: 1 !important;
-    }    
+    }
     /* 禁用复杂选择器元素的过渡 - 仅在非 View Transitions 模式下 */
     .is-theme-transitioning:not(.use-view-transition) .float-panel,
     .is-theme-transitioning:not(.use-view-transition) .float-panel *,
@@ -159,7 +183,7 @@ html {
         transition: none !important;
         animation: none !important;
     }
-    
+
     /* 强制使用 contain 隔离渲染上下文 - 仅在非 View Transitions 模式下 */
     .is-theme-transitioning:not(.use-view-transition) .post-card,
     .is-theme-transitioning:not(.use-view-transition) .widget,
@@ -236,13 +260,13 @@ html {
         backdrop-filter: blur(8px) !important;
         -webkit-backdrop-filter: blur(8px) !important;
     }
-    
+
     body.wallpaper-transparent .card-base {
         background: var(--card-bg-transparent) !important;
         backdrop-filter: blur(8px) !important;
         -webkit-backdrop-filter: blur(8px) !important;
     }
-    
+
     /* 确保嵌套的卡片元素在全屏壁纸模式下也应用半透明效果 */
     .wallpaper-transparent .card-base .card-base,
     body.wallpaper-transparent .card-base .card-base {
@@ -569,7 +593,7 @@ html {
     padding: 0 !important;
     background: transparent !important;
   }
-  
+
   /* 移动端网格模式也显示为列表 */
   #post-list-container.grid-mode {
     display: flex !important;
@@ -577,7 +601,7 @@ html {
     gap: 0.5rem !important;
     grid-template-columns: 1fr !important;
   }
-  
+
   /* 移动端文章卡片间距优化 */
   #post-list-container .post-card-item {
     margin-bottom: 0 !important;
@@ -592,7 +616,7 @@ html {
     flex-direction: column;
     gap: 0.75rem;
   }
-  
+
   /* 网格模式下的样式 */
   .post-list-container.grid-mode {
     display: grid !important;

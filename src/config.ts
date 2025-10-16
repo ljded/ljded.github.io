@@ -22,8 +22,8 @@ const SITE_TIMEZONE = 8; //设置你的网站时区 from -12 to 12 default in UT
 export const siteConfig: SiteConfig = {
 	title: "龙剑的技术分享",
 	subtitle: "一个专注于技术分享的博客",
-	siteURL: "https://mizuki.mysqil.com/", // 请替换为你的站点URL，以斜杠结尾
-	siteStartDate: "2025-01-01", // 站点开始运行日期，用于站点统计组件计算运行天数
+	siteURL: "https://www.ljded.cn/", // 请替换为你的站点URL，以斜杠结尾
+	siteStartDate: "2025-10-16", // 站点开始运行日期，用于站点统计组件计算运行天数
 
 	timeZone: SITE_TIMEZONE,
 
@@ -90,6 +90,8 @@ export const siteConfig: SiteConfig = {
 	},
 
 	banner: {
+		enable: true, // 是否启动Banner壁纸模式
+
 		// 支持单张图片或图片数组，当数组长度 > 1 时自动启用轮播
 		src: {
 			desktop: [
@@ -196,10 +198,32 @@ export const siteConfig: SiteConfig = {
 			localFonts: ["loli.ttf"],
 			enableCompress: true, // 启用字体子集优化，减少字体文件大小
 		},
+		harmony: {
+			// 启用 HarmonyOS Sans 为全局字体
+            fontFamily: "HarmonyOS Sans",
+            fontWeight: "500",
+            localFonts: ["HarmonyOS_Sans_Medium.ttf"],
+            enableCompress: false, // 启用字体子集优化，减少字体文件大小
+		},
+		harmony_sc: {
+			// 启用 HarmonyOS Sans 为全局字体
+            fontFamily: "HarmonyOS Sans SC",
+            fontWeight: "500",
+            localFonts: ["HarmonyOS_Sans_SC_Medium.ttf"],
+            enableCompress: false, // 启用字体子集优化，减少字体文件大小
+		},
+		harmony_arabic: {
+			// 启用 HarmonyOS Sans 为全局字体
+            fontFamily: "HarmonyOS Sans Naskh Arabic",
+            fontWeight: "500",
+            localFonts: ["HarmonyOS_Sans_Naskh_Arabic_Medium.ttf"],
+            enableCompress: false, // 启用字体子集优化，减少字体文件大小
+		},
 	},
 	showLastModified: true, // 控制“上次编辑”卡片显示的开关
 };
 export const fullscreenWallpaperConfig: FullscreenWallpaperConfig = {
+	enable: true, // 启用全屏壁纸功能,非Banner模式下生效
 	src: {
 		desktop: [
 			"/assets/desktop-banner/1.webp",
