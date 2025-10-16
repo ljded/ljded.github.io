@@ -26,6 +26,30 @@
 	font-display: swap;
 }
 
+/* 导入 HarmonyOS_Sans 字体 */
+@font-face {
+	font-family: 'HarmonyOS_Sans';
+	src: url('/assets/font/HarmonyOS_Sans_Medium.ttf') format('truetype');
+	font-weight: 500;
+	font-display: swap;
+}
+
+/* 导入 HarmonyOS_Sans_SC 字体 */
+@font-face {
+	font-family: 'HarmonyOS_Sans_SC';
+	src: url('/assets/font/HarmonyOS_Sans_SC_Medium.ttf') format('truetype');
+	font-weight: 500;
+	font-display: swap;
+}
+
+/* 导入 HarmonyOS_Sans_Arabic 字体 */
+@font-face {
+	font-family: 'HarmonyOS_Sans_Arabic';
+	src: url('/assets/font/HarmonyOS_Sans_Naskh_Arabic_Medium.ttf') format('truetype');
+	font-weight: 500;
+	font-display: swap;
+}
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -43,6 +67,21 @@ html {
 /* 当启用 Hanalei 字体时应用为全局字体 */
 .hanalei-enabled {
   font-family: 'Hanalei', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+/* 当启用 HarmonyOS_Sans 字体时应用为全局字体 */
+.harmony-enabled {
+	font-family: 'HarmonyOS_Sans', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+/* 当启用 HarmonyOS_Sans 字体时应用为全局字体 */
+.harmony_sc-enabled {
+	font-family: 'HarmonyOS_Sans_SC', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+/* 当启用 HarmonyOS_Sans 字体时应用为全局字体 */
+.harmony_arabic-enabled {
+	font-family: 'HarmonyOS_Sans_Arabic', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
 /* 页面顶部渐变高光效果 */
