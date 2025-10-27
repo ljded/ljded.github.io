@@ -1,10 +1,10 @@
 ---
 title: GPT
 description: 现代的磁盘分区方案
-pubDate: 2025-10-16
+pubDate: 2025-10-27
 date: 2023-04-10
-published: 2025-10-16
-draft: true
+published: 2025-10-27
+draft: false
 tags: [磁盘分区, GPT]
 category: 数据恢复
 ---
