@@ -1,6 +1,6 @@
 # 关于我们
 
-本网站使用 **Astro** 框架 [Mizuki](https://github.com/matsuzaka-yuki/mizuki) 模板构建.
+本网站使用 **Astro** 框架 [Mizuki](https://github.com/matsuzaka-yuki/mizuki) 主题构建.
 
 ::github{repo="matsuzaka-yuki/Mizuki"}
 
@@ -24,15 +24,15 @@
 
 ## 🛠️ 技术栈详解
 
-| 技术领域      | 使用技术                                       |
-|-----------|--------------------------------------------|
-| **前端框架**  | Astro + TypeScript                         |
-| **样式方案**  | Tailwind CSS + 自定义设计令牌                     |
-| **UI 组件** | 基于 Material Design 3 规范                    |
-| **内容管理**  | Markdown + MDX                             |
-| **构建工具**  | Vite + pnpm                                |
-| **部署平台**  | GitHub Pages / EdgeOne Pages(规划中,等待ICP备案)  |
-| **CDN**   | EdgeOne(规划中,等待ICP备案)                       |
+| 技术领域      | 使用技术                                      |
+|-----------|-------------------------------------------|
+| **前端框架**  | Astro + TypeScript                        |
+| **样式方案**  | Tailwind CSS + 自定义设计令牌                    |
+| **UI 组件** | 基于 Material Design 3 规范                   |
+| **内容管理**  | Markdown + MDX                            |
+| **构建工具**  | Vite + pnpm                               |
+| **部署平台**  | 双平台部署确保高可用 (GitHub Pages / EdgeOne Pages) |
+| **CDN**   | 全球可用CND提供加速服务 (EdgeOne)                   |
 
 
 ## 🚀 性能优化
@@ -42,7 +42,7 @@
 - **静态生成**：所有页面预渲染，实现瞬时加载
 - **资源优化**：图片懒加载、代码分割、资源压缩
 - **缓存策略**：智能缓存机制，减少重复请求
-- **CDN 加速**：全球边缘节点部署，确保快速访问(规划中,等待ICP备案)
+- **CDN 加速**：全球边缘节点部署，确保快速访问
 
 
 
@@ -54,10 +54,11 @@
 - **Tailwind CSS**：强大的工具类优先 CSS 框架
 - **Material Design**：谷歌的设计系统和规范
 - **Mizuki**: 美观的主题
+- **EdgeOne**：提供免费CND和页面服务
 - **华为**: 本站使用了免费商用的 **HarmonyOS Sans** 字体
 - **开源社区**：所有贡献者和使用者的支持
 
 ---
 
-*最后更新：2025/10/15*  
+*最后更新：2025/10/27*  
 *让我们一起打造更好的技术分享平台！*
