@@ -4,7 +4,7 @@ description: 网站评论头像修改方法
 pubDate: 2025-11-04
 date: 2025-11-04
 published: 2025-11-04
-draft: true
+draft: false
 tags: [运营, Q&A]
 category: 公告
 ---
