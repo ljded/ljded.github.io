@@ -1,10 +1,10 @@
 ---
 title: NTFS分区引导
 description: NTFS的分区引导(DBR)
-pubDate: 2025-10-27
+pubDate: 2025-11-04
 date: 2023-04-10
-published: 2025-10-27
-draft: true
+published: 2025-11-04
+draft: false
 tags: [文件系统, DBR]
 category: 数据恢复
 ---
