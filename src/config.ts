@@ -407,7 +407,7 @@ export const sidebarLayoutConfig: SidebarLayoutConfig = {
 		//hidden:不显示侧边栏(桌面端)   drawer:抽屉模式(移动端不显示)   sidebar:显示侧边栏
 		layout: {
 			// 移动端：抽屉模式
-			mobile: "sidebar",
+			mobile: "hidden",
 			// 平板端：显示侧边栏
 			tablet: "sidebar",
 			// 桌面端：显示侧边栏
@@ -474,10 +474,10 @@ export const widgetConfigs = {
 } as const;
 
 export const umamiConfig = {
-	enabled: false, // 是否显示Umami统计
-	apiKey: "api_XXXXXXXXXX", // 你的API密钥
+	enabled: true, // 是否显示Umami统计
+	apiKey: "api_Io1PEWFpR8VAyZk6skZZPEolspskVs81", // 你的API密钥
 	baseUrl: "https://api.umami.is", // Umami Cloud API地址
 	scripts: `
-<script defer src="XXXX.XXX" data-website-id="ABCD1234"></script>
+<script defer src="https://cloud.umami.is/script.js" data-website-id="c62c2da3-e0ca-451a-b06c-fb425a198ed4"></script>
   `.trim(), // 上面填你要插入的Script,不用再去Layout中插入
 } as const;
