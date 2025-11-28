@@ -90,7 +90,6 @@ export const siteConfig: SiteConfig = {
 	},
 
 	banner: {
-
 		// 支持单张图片或图片数组，当数组长度 > 1 时自动启用轮播
 		src: {
 			desktop: [
@@ -128,7 +127,7 @@ export const siteConfig: SiteConfig = {
 		// PicFlow API支持(智能图片API)
 		imageApi: {
 			enable: false, // 启用图片API
-			url: "https://domain.com/api_v2.php?format=text&count=4", // API地址，返回每行一个图片链接的文本
+			url: "http://domain.com/api_v2.php?format=text&count=4", // API地址，返回每行一个图片链接的文本
 		},
 		// 这里需要使用PicFlow API的Text返回类型,所以我们需要format=text参数
 		// 项目地址:https://github.com/matsuzaka-yuki/PicFlow-API
@@ -192,7 +191,7 @@ export const siteConfig: SiteConfig = {
 		},
 		cjkFont: {
 			// 中日韩字体 - 作为回退字体
-			fontFamily: "'loli'",
+			fontFamily: "萝莉体 第二版",
 			fontWeight: "500",
 			localFonts: ["萝莉体 第二版.ttf"],
 			enableCompress: true, // 启用字体子集优化，减少字体文件大小
@@ -337,17 +336,17 @@ export const navBarConfig: NavBarConfig = {
 			icon: "material-symbols:more-horiz",
 			children: [
 				{
-					name: "项目",
+					name: "Projects",
 					url: "/projects/",
 					icon: "material-symbols:work",
 				},
 				{
-					name: "技能",
+					name: "Skills",
 					url: "/skills/",
 					icon: "material-symbols:psychology",
 				},
 				{
-					name: "时间线",
+					name: "Timeline",
 					url: "/timeline/",
 					icon: "material-symbols:timeline",
 				},
@@ -403,7 +402,7 @@ export const expressiveCodeConfig: ExpressiveCodeConfig = {
 	// 注意：某些样式（如背景颜色）已被覆盖，请参阅 astro.config.mjs 文件。
 	// 请选择深色主题，因为此博客主题目前仅支持深色背景
 	theme: "github-dark",
-	// 是否在主题切换时隐藏代码块以避免闪烁问题
+	// 是否在主题切换时隐藏代码块以避免卡顿问题
 	hideDuringThemeTransition: true,
 };
 
@@ -481,8 +480,8 @@ export const sidebarLayoutConfig: SidebarLayoutConfig = {
 			order: 2,
 			// 组件位置："top" 表示固定在顶部
 			position: "top",
-            // 所在侧边栏
-            sidebar: "left",
+			// 所在侧边栏
+			sidebar: "left",
 			// CSS 类名
 			class: "onload-animation",
 			// 动画延迟时间
@@ -517,7 +516,7 @@ export const sidebarLayoutConfig: SidebarLayoutConfig = {
 			// 组件显示顺序
 			order: 5,
 			// 组件位置："sticky" 表示粘性定位
-			position: "sticky",
+			position: "top",
 			// 所在侧边栏
 			sidebar: "left",
 			// CSS 类名

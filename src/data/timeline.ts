@@ -32,6 +32,7 @@ export const timelineData: TimelineItem[] = [
 		type: "project",
 		startDate: "2025-06-06",
 		location: "济南",
+        organization: "山东电子职业技术学院",
 		skills: ["Java", "SpringBoot", "Mybatis-Plus", "Sa-Token", "MySQL", "Redis"],
 		// achievements: [
 		// 	"Current GPA: 3.6/4.0",
