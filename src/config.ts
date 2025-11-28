@@ -194,7 +194,7 @@ export const siteConfig: SiteConfig = {
 			// 中日韩字体 - 作为回退字体
 			fontFamily: "'loli'",
 			fontWeight: "500",
-			localFonts: ["loli.ttf"],
+			localFonts: ["萝莉体 第二版.ttf"],
 			enableCompress: true, // 启用字体子集优化，减少字体文件大小
 		},
 		harmony: {
