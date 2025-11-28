@@ -327,6 +327,7 @@ export const navBarConfig: NavBarConfig = {
                     name: "密码管理器",
                     url: "https://password.ljded.cn",
                     icon: "material-symbols:lock",
+                    external: true,
                 }
 			],
 		},
