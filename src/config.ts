@@ -299,12 +299,17 @@ export const navBarConfig: NavBarConfig = {
 				// 	url: "/albums/",
 				// 	icon: "material-symbols:photo-library",
 				// },
-				// {
-				// 	name: "Devices",
-				// 	url: "devices/",
-				// 	icon: "material-symbols:devices",
-				// 	external: false,
-				// },
+				{
+					name: "Devices",
+					url: "devices/",
+					icon: "material-symbols:devices",
+				},
+                {
+                    name: "密码管理器",
+                    url: "https://password.ljded.cn",
+                    icon: "material-symbols:lock",
+                    external: true,
+                },
 			],
 		},
 		{
@@ -322,12 +327,6 @@ export const navBarConfig: NavBarConfig = {
 					url: "/friends/",
 					icon: "material-symbols:group",
 				},
-                {
-                    name: "密码管理器",
-                    url: "https://password.ljded.cn",
-                    icon: "material-symbols:lock",
-                    external: true,
-                }
 			],
 		},
 		{
