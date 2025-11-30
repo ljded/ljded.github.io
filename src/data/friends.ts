@@ -82,7 +82,7 @@ export const friendsData: FriendItem[] = [
         title: "nuoxian's API",
         imgurl: "https://api.nxvav.cn/favicon.ico",
         desc: "nuoxian's API是免费为用户提供网络数据接口调用的服务平台，我们致力于为用户提供稳定、快速的免费API数据接口服务。",
-        siteurl: "api.nxvav.cn",
+        siteurl: "https://api.nxvav.cn",
         tags: ["API"],
     },
 ];
