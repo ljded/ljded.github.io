@@ -43,7 +43,6 @@ export const timelineData: TimelineItem[] = [
 		color: "#059669",
 		featured: true,
 	},
-
 ];
 
 // Get timeline statistics
