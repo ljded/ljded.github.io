@@ -11,5 +11,9 @@ category: 公告
 
 本次更新使密码管理器实现站库分离
 
+本次更新从 `Vaultwarden` 1.35.0 更新至 `Vaultwarden` 1.35.1
+
+::github{repo="dani-garcia/vaultwarden"}
+
 > [!TIP]
 > 所有用户数据已全量迁移
