@@ -19,7 +19,7 @@ import { LinkPreset } from "./types/config";
 // 移除i18n导入以避免循环依赖
 
 // 定义站点语言
-const SITE_LANG = "zh_CN"; // 语言代码，例如：'en', 'zh_CN', 'ja' 等。
+const SITE_LANG = "en"; // 语言代码，例如：'en', 'zh_CN', 'ja' 等。
 const SITE_TIMEZONE = 8; //设置你的网站时区 from -12 to 12 default in UTC+8
 export const siteConfig: SiteConfig = {
 	title: "龙剑的技术分享",
@@ -702,3 +702,4 @@ export const umamiConfig = {
 <script defer src="https://cloud.umami.is/script.js" data-website-id="c62c2da3-e0ca-451a-b06c-fb425a198ed4"></script>
   `.trim(), // 上面填你要插入的Script,不用再去Layout中插入
 } as const;
+
