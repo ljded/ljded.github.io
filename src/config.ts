@@ -702,4 +702,3 @@ export const umamiConfig = {
 <script defer src="https://cloud.umami.is/script.js" data-website-id="c62c2da3-e0ca-451a-b06c-fb425a198ed4"></script>
   `.trim(), // 上面填你要插入的Script,不用再去Layout中插入
 } as const;
-
