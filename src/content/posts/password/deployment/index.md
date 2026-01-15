@@ -1,6 +1,6 @@
 ---
-title: 密码管理器教程
-description: 密码管理器教程
+title: 密码管理器部署教程
+description: 密码管理器部署教程
 pubDate: 2026-01-04
 date: 2026-01-04
 published: 2026-01-04
