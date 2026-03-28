@@ -33,8 +33,8 @@ category: 密码管理器
 ::github{repo="ndbeals/winssh-pageant"}
 
 > [!TIP]
-> [MobaXterm相关资源](http://123.ljded.cn/s/panSVv-Q5ui?pwd=Ojhe#):`Python` 3.14.2版本安装包和 `2026/01/14` 下载的 `MobaXterm-Keygen` 及 `MobaXterm` 25.4版本 Windows 安装包和汉化包(仅系统为`GBK`可用)<br/>
-> [WinSSH-Pageant](http://123.ljded.cn/s/panSVv-E5ui?pwd=zjtY#):`WinSSH-Pageant` v2.3.1版本MSI安装包
+> [MobaXterm相关资源](https://123.ljded.cn/s/panSVv-Q5ui?pwd=Ojhe#):`Python` 3.14.2版本安装包和 `2026/01/14` 下载的 `MobaXterm-Keygen` 及 `MobaXterm` 25.4版本 Windows 安装包和汉化包(仅系统为`GBK`可用)<br/>
+> [WinSSH-Pageant](https://123.ljded.cn/s/panSVv-E5ui?pwd=zjtY#):`WinSSH-Pageant` v2.3.1版本MSI安装包
 
 # 环境配置
 
@@ -80,7 +80,7 @@ category: 密码管理器
 ::github{repo="mzjdy/MobaXterm-Keygen"}
 
 使用解锁需安装 `Python3` [下载链接](https://www.python.org/downloads/windows/) 下载 `Stable Releases` 稳定版安装即可<br/>
-本站提供了 `3.14.2` 版本的 `Python` 安装包和 `2026/01/14` 下载的解锁包 [网盘](http://123.ljded.cn/s/panSVv-Q5ui?pwd=Ojhe#)
+本站提供了 `3.14.2` 版本的 `Python` 安装包和 `2026/01/14` 下载的解锁包 [网盘](https://123.ljded.cn/s/panSVv-Q5ui?pwd=Ojhe#)
 
 解压解锁包在解压后的文件夹打开 `命令提示符` (如图 输入 `cmd` 后回车即可)
 ![解锁](MobaXterm解锁.png)
@@ -109,7 +109,7 @@ category: 密码管理器
 > `winget` 命令也是去 GitHub 仓库下载
 
 有两种安装方式请自行选择
-- MSI 安装包(百度网盘为本站上传) [GitHub](https://github.com/ndbeals/winssh-pageant/releases/tag/v2.3.1) [网盘](http://123.ljded.cn/s/panSVv-E5ui?pwd=zjtY#)
+- MSI 安装包(百度网盘为本站上传) [GitHub](https://github.com/ndbeals/winssh-pageant/releases/tag/v2.3.1) [网盘](https://123.ljded.cn/s/panSVv-E5ui?pwd=zjtY#)
 - 在 `命令提示符` 运行 `winget install winssh-pageant`
 
 ## Git 使用 bitwarden 登录和签名

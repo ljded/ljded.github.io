@@ -11,7 +11,7 @@ category: 比赛
 
 > [!TIP]
 > 文件分享在网盘答案为本人和团队编写如二次分发请注明作者<br>
-> http://123.ljded.cn/s/panSVv-o5ui?pwd=iTG8# <br>
+> https://123.ljded.cn/s/panSVv-o5ui?pwd=iTG8# <br>
 
 > [!TIP]
 > 大赛官网<br>
