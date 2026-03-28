@@ -33,7 +33,7 @@ category: 密码管理器
 ::github{repo="ndbeals/winssh-pageant"}
 
 > [!TIP]
-> [MobaXterm相关资源](http://123.ljded.cn/s/panSVv-Q5ui?pwd=Ojhe#):`3.14.2` 版本的 `Python` 安装包和 `2026/01/14` 下载的 `MobaXterm-Keygen` 及 `MobaXterm` 25.4 版本 Windows 安装包和汉化包(仅系统为`GBK`可用)
+> [MobaXterm相关资源](http://123.ljded.cn/s/panSVv-Q5ui?pwd=Ojhe#):`Python` 3.14.2版本安装包和 `2026/01/14` 下载的 `MobaXterm-Keygen` 及 `MobaXterm` 25.4版本 Windows 安装包和汉化包(仅系统为`GBK`可用)<br/>
 > [WinSSH-Pageant](http://123.ljded.cn/s/panSVv-E5ui?pwd=zjtY#):`WinSSH-Pageant` v2.3.1版本MSI安装包
 
 # 环境配置
