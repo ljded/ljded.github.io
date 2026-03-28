@@ -113,7 +113,7 @@ category: 密码管理器
 
 > [!WARNING]
 > 想使用此功能 `Git` 源仓库请使用 SSH 链接<br/>
-> 如使用反向代理不能让代理软件在 Host 文件中修改 GitHub 的解析请使用代理监听
+> ~~如使用反向代理不能让代理软件在 Host 文件中修改 GitHub 的解析请使用代理监听~~(2026/3/28更新详见**反代与SSH兼容**)
 
 ### GitHub 身份验证
 
@@ -152,4 +152,20 @@ Add-Content -Path "$env:USERPROFILE\.ssh\allowedSigners" -Value "GitHub主邮箱
 git config --global core.sshCommand "C:/Windows/System32/OpenSSH/ssh.exe"
 # 指定 SSH 注册机
 git config --global gpg.ssh.program "C:/Windows/System32/OpenSSH/ssh-keygen.exe"
+```
+
+### 反代与SSH兼容
+
+1. 找到 ssh 的配置文件(无此文件则自行创建) <br/> Linux: `~/.ssh/config` Windows: `C:\Users\用户名\.ssh\config`(文件没有后缀)
+2. 将此文件写为(示例为解决GitHub冲突的)
+```ssh-config
+Host github.com
+    HostName ssh.github.com    # GitHub 为 SSH 专门开放的 443 端口域名
+    Port 443
+    User git
+    IdentityFile ~/.ssh/id_rsa
+    # Windows 使用 Git Bash 自带的 connect.exe
+    ProxyCommand "C:\\Program Files\\Git\\mingw64\\bin\\connect.exe" -H 127.0.0.1 %h %p
+    # 如果是 macOS/Linux，使用 corkscrew：ProxyCommand corkscrew 127.0.0.1 8080 %h %p
+    # 127.0.0.1或127.0.0.1 8080设置为反代软件的代理地址(与hosts文件修改的地址相同即可)
 ```
