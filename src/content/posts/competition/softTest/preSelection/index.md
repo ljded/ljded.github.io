@@ -10,8 +10,8 @@ category: 比赛
 ---
 
 > [!TIP]
-> 文件分享在百度网盘答案为本人和团队编写如二次分发请注明作者<br>
-> https://pan.baidu.com/s/13vyaTra_NgNYfoy-xYUDZw?pwd=4emb <br>
+> 文件分享在网盘答案为本人和团队编写如二次分发请注明作者<br>
+> http://123.ljded.cn/s/panSVv-k5ui?pwd=zOUU# <br>
 
 > [!TIP]
 > 大赛官网<br>
