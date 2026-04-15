@@ -1,8 +1,8 @@
 # 关于我们
 
-本网站使用 **Astro** 框架 [Mizuki](https://github.com/matsuzaka-yuki/mizuki) 模板构建.
+本网站使用 **Astro** 框架 [Mizuki](https://github.com/LyraVoid/Mizuki) 模板构建.
 
-::github{repo="matsuzaka-yuki/Mizuki"}
+::github{repo="LyraVoid/Mizuki"}
 
 ## 🎯 我们的使命
 
