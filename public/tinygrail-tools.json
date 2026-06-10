@@ -1,0 +1,15 @@
+{
+  "system": {
+    "version": "0.0.1"
+  },
+  "domain": [
+    "lain.bangumi.one"
+  ],
+  "user": {
+    "ljded": {
+      "name": "龙剑de刀",
+      "password": "$2b$10$t3SmJuaXt/GMfAsHRdW.iu.htQVY/0hiXP0cGXyZ/nhQq3OGMyAaG",
+      "rpm": 10
+    }
+  }
+}
